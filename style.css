@@ -595,7 +595,7 @@ body{
 
 /* BOTÃO HAMBURGUER ESCONDIDO NO DESKTOP */
 .menu-toggle{
-    display: none;
+    display: none !important;
     background: none;
     border: none;
     color: white;
@@ -623,14 +623,51 @@ body{
         padding: 0 10px;
     }
 
+    .sobre{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .sobre-texto{
+        width: 100%;
+    }
+
+    .sobre-texto p{
+        font-size: 18px;
+        line-height: 1.8;
+        text-align: left;
+
+        max-width: 100%;
+    word-break: normal;
+    }
+
+     sobre-img img{
+    width: 70%;
+    max-width: 230px;
+    border-radius: 15px;
+}
+
     .header{
-        padding: 20px;
+        padding: 15px 20px;
+        display:flex;
         justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
     }
 
+    .logo{
+        font-size: 18px;
+        gap: 8px;
+    }
+
+    .logo h1,
+    .logo span{
+        font-size: 18px;
+    }
+
     .menu-toggle{
-        display: block;
+        display: block !important;
     }
 
     .btn-header{
