@@ -605,6 +605,9 @@ body{
 
 /* MOBILE */
 @media (max-width: 768px){
+    nav {
+        display: none;
+    }
 
     .banner{
         height: 100vh;
