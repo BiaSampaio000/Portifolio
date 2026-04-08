@@ -1,0 +1,627 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    border-bottom: 1px solid #ccc;
+    background: #111;
+    color: white;
+    position: sticky;
+    top: 0;
+    background: #594666;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.logo i,
+.logo-footer i{
+    font-size: 22px;
+}
+.menu a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #c97ce7;
+}
+
+.btn-header{
+    background: rgb(133, 68, 172);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(139, 92, 246, 0.4);
+}
+
+.btn-header:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(139, 92, 246, 0.7);
+}
+
+
+.header nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.banner{
+    height: 90vh;
+
+    background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.45)),
+        url("img/plano\ de\ fundo\ 4.png") no-repeat center center;
+
+    background-size: cover;
+    background-position: top;
+    background-attachment:fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+
+
+.banner-content h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(155, 93, 229, 0.8),
+                0 0 20px rgba(155, 93, 229, 0.5);
+    margin-bottom: 15px;
+}
+
+.banner-content p{
+    font-size: 20px;
+    max-width:700px;
+    margin: 0 auto;
+    color: #f3e8ff;
+    line-height: 1.6;
+    text-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.banner h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.banner button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+/* Primeira parte de serviçõs--------------------------*/
+.servicos{
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.servicos h2{
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 36px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(155, 93, 229, 0.5);
+    line-height: 1.4;
+}
+.cards-servicos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 50px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.card{
+    width: 320px;
+    background: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    border-color: #9b5de5;
+    box-shadow: 0 0 20px rgba(155, 93, 229, 0.4);
+}
+
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h3{
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+}
+
+.card p{
+    margin-top: 12px;
+    color: #d6d6d6;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.card a{
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration:none;
+    color: white;
+}
+
+
+/* Parte de projetos -----------------------------------*/
+
+.projetos{
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.projetos h1{
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 36px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(155, 93, 229, 0.5);
+    line-height: 1.4;
+}
+
+.cards-projetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card{
+    background: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 320px;
+    text-align: left;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    border-color: #9b5de5;
+    box-shadow: 0 0 20px rgba(155, 93, 229, 0.4);
+}
+
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h3{
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+}
+
+.card p{
+    margin-top: 12px;
+    color: #d6d6d6;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------- */
+
+
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 80px 60px;
+    gap: 50px;
+}
+
+.sobre-texto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-texto h2{
+    font-size: 42px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(155, 93, 229, 0.5);
+    margin-bottom: 20px;
+}
+
+.sobre-texto p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #d6d6d6;
+    max-width: 700px;
+}
+
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.beneficio{
+    margin-top: 30px;
+}
+
+.beneficio i{
+    font-size: 22px;
+    color: #8b5cf6;
+    margin-bottom: 10px;
+}
+
+.beneficio h3{
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(155, 93, 229, 0.5);
+    margin-bottom: 12px;
+}
+
+.beneficio p{
+    margin-bottom: 20px;
+}
+
+.sobre-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-img img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.tecnologias{
+    margin-top: 30px;
+}
+
+.tecnologias h3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(155, 93, 229, 0.5);
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.tecnologias h3 i{
+    font-size: 22px;
+    color:#8b5cf6;
+}
+
+.tech-icons{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.tech-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.tech-item:hover{
+    transform: translateY(-4px);
+}
+
+.tech-item i{
+    font-size: 22px;
+    color: #594666;
+}
+
+.tech-item span{
+    font-weight: bold;
+}
+
+.btn-github{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+}
+.btn-github:hover{
+    color:#9b5de5;
+    text-shadow: 0 0 8px rgba(155, 93, 229, 0.8);
+    transform: scale(1.05);
+}
+
+.btn-github i{
+    font-size: 20px;
+}
+
+/*Depoimentos---------------------------------------*/
+
+.depoimentos{
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.depoimentos h2{
+    font-size: 32px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(155, 93, 229, 0.5);
+    line-height: 1.5;
+}
+
+.depoimentos p{
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.cards-depoimentos{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.depo-card{
+    background: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 15px;
+    padding: 25px;
+    width: 320px;
+    max-width: 350px;
+    text-align: left;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.depo-card:hover{
+    transform: translateY(-8px);
+    border-color: #9b5de5;
+}
+
+.stars{
+    margin-bottom: 15px;
+    color: gold;
+    font-size: 18px;
+}
+
+.cliente{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.foto{
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Contatos e Footer---------------------------------------*/
+
+.contato{
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.contato h2{
+    font-size: 32px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(155, 93, 229, 0.5);
+    line-height: 1.5;
+}
+
+.contato p{
+    margin-bottom: 40px;
+    color: #d6d6d6;
+    text-shadow: 0 0 10px rgba(155, 93, 229, 0.5);
+}
+
+.contato-cards{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contato-item{
+    max-width: 250px;
+}
+
+.contato-item i{
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.contato-item a{
+    color: #594666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contato-item h3{
+    margin-bottom: 10px;
+}
+
+.contato-item a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contato-item a:hover{
+    color:#9b5de5
+}
+.contato-item a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    background: #594666;
+    padding: 40px;
+    text-align: center;
+}
+
+/*-----------Responsividade para celular-------------------*/
+
+/* MENU DESKTOP */
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.nav-menu a:hover{
+    color: #d8b4fe;
+    text-shadow: 0 0 8px rgba(216, 180, 254, 0.8);
+}
+
+.nav-menu a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #d8b4fe;
+    box-shadow: 0 0 8px rgba(216, 180, 254, 0.8);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after{
+    width: 100%;
+}
+
+/* BOTÃO HAMBURGUER ESCONDIDO NO DESKTOP */
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+
+    .header{
+        padding: 20px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .btn-header{
+        display: none;
+    }
+
+    .nav-menu{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .nav-menu.active{
+        display: flex;
+    }
+}
