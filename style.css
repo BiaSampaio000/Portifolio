@@ -646,6 +646,7 @@ body{
     width: 70%;
     max-width: 230px;
     border-radius: 15px;
+    box-shadow: 0 0 20px rgba(155, 93, 229, 0.25);
 }
 
     .header{
