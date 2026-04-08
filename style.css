@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background: #0d0d0d;
+    color: white;
+    overflow-x: hidden;
+}
+
 
 .header{
     display: flex;
@@ -565,8 +571,10 @@
 }
 
 .nav-menu a:hover{
-    color: #d8b4fe;
-    text-shadow: 0 0 8px rgba(216, 180, 254, 0.8);
+    .nav-menu a:hover{
+    color:#c77dff;
+    text-shadow: 0 0 8px rgba(199, 125, 255, 0.8);
+    transition: 0.3s ease;
 }
 
 .nav-menu a::after{
@@ -597,6 +605,23 @@
 
 /* MOBILE */
 @media (max-width: 768px){
+
+    .banner{
+        height: 100vh;
+        padding: 20px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .banner-content h1{
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .banner-content p{
+        font-size: 18px;
+        padding: 0 10px;
+    }
 
     .header{
         padding: 20px;
