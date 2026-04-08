@@ -648,5 +648,18 @@ body{
 
     .nav-menu.active{
         display: flex;
+
+        .card,
+    .depo-card{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .servicos,
+    .projetos,
+    .sobre,
+    .depoimentos,
+    .contato{
+        padding: 60px 20px;
     }
 }
