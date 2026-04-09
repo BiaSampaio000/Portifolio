@@ -595,7 +595,7 @@ body{
 
 /* BOTÃO HAMBURGUER ESCONDIDO NO DESKTOP */
 .menu-toggle{
-    display: none !important;
+    display: none;
     background: none;
     border: none;
     color: white;
