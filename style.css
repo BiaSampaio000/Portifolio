@@ -607,7 +607,7 @@ body{
 @media (max-width: 768px){
 
     .menu-toggle{
-        display: block;
+        display: block !important;
     }
 
     .btn-header{
@@ -624,7 +624,7 @@ body{
     }
 
     .nav-menu.active{
-        display: flex;
+        display: flex !important;
     }
 
     .header{
